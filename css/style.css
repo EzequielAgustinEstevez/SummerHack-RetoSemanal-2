@@ -1,0 +1,29 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+}
+header {
+  background-color: #512DA8;
+  display: flex; /* contenedor flex */
+  justify-content: space-between; /* alinea el contenido con espacios uno al lado del otro (gracias a flexbox)  */
+  align-items: center; /* centra todo el contenido dentro del header */
+  box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.2);
+}
+nav {
+  *background: rgb(69, 55, 69);
+  width: 400px;
+}
+ul {
+  margin-top: revert; /* cualidad por defecto que hay que desactivar */
+  display: flex; /* contenedor flex */
+  list-style: none; /* quiter forma de lista */
+  justify-content: space-around; /* alinea el contenido con espacios al rededor (gracias a flexbox) */
+}
+a img {
+  width: 40px;
+  height: 40px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.logo {
+  padding: 9px;
+}
