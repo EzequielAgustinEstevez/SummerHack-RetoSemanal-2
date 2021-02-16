@@ -3,21 +3,20 @@ body {
   margin: 0px;
 }
 header {
-  background-color: #512DA8;
+  background-color: #512da8;
   display: flex; /* contenedor flex */
-  justify-content: space-between; /* alinea el contenido con espacios uno al lado del otro (gracias a flexbox)  */
+  justify-content: space-between; /* Muestra elementos con la misma distancia entre ellos. */
   align-items: center; /* centra todo el contenido dentro del header */
   box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.2);
 }
 nav {
-  *background: rgb(69, 55, 69);
   width: 400px;
 }
 ul {
-  margin-top: revert; /* cualidad por defecto que hay que desactivar */
+  margin-top: revert; /* cualidad por defecto que hay que desactivar de bootstrap*/
   display: flex; /* contenedor flex */
-  list-style: none; /* quiter forma de lista */
-  justify-content: space-around; /* alinea el contenido con espacios al rededor (gracias a flexbox) */
+  list-style: none; /* sin forma de lista */
+  justify-content: space-around; /* Muestra elementos con la misma separación alrededor de ellos.*/
 }
 a img {
   width: 40px;
@@ -26,4 +25,29 @@ a img {
 }
 .logo {
   padding: 9px;
+}
+.img{
+  background: url(../img/podcast.jpg) center center fixed;
+  background-size: cover;
+}
+.portada {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: grid; /* propiedad flex activa */
+  align-items: center; /* elementos dentro del flex centrados al medio*/
+  justify-content: flex-end; /* elementos dentro del flex a la derecha */
+  display: flex;
+}
+.portada .texto {
+  justify-content: flex-end;
+  text-align: end;
+}
+.texto h1 {
+  background-color: black;
+  margin-right: 0.3em;
+  display: inline-block;
+}
+.audio{
+  text-align: center;
 }
