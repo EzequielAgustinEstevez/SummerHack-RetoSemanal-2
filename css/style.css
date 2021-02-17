@@ -3,36 +3,44 @@ body {
   margin: 0px;
 }
 header {
-  background-color: #512da8;
+  background-color: #044046;
   display: flex; /* contenedor flex */
   justify-content: space-between; /* Muestra elementos con la misma distancia entre ellos. */
   align-items: center; /* centra todo el contenido dentro del header */
-  box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+header h1 {
+  color: #ffffff;
+  display: contents;
 }
 nav {
-  width: 400px;
+  width: 10em;
 }
 ul {
   margin-top: revert; /* cualidad por defecto que hay que desactivar de bootstrap*/
   display: flex; /* contenedor flex */
   list-style: none; /* sin forma de lista */
   justify-content: space-around; /* Muestra elementos con la misma separación alrededor de ellos.*/
+  padding-right: 1em;
 }
 a img {
-  width: 40px;
-  height: 40px;
+  width: 2em;
+  height: 2em;
+  padding-left: 0.1em;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .logo {
   padding: 9px;
+  width: 5em;
+  height: 5em;
 }
-.img{
-  background: url(../img/podcast.jpg) center center fixed;
+.img {
+  background: url(../img/portada.jpg) center center fixed;
   background-size: cover;
 }
 .portada {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   color: white;
   display: grid; /* propiedad flex activa */
   align-items: center; /* elementos dentro del flex centrados al medio*/
@@ -44,10 +52,97 @@ a img {
   text-align: end;
 }
 .texto h1 {
-  background-color: black;
-  margin-right: 0.3em;
-  display: inline-block;
-}
-.audio{
+  background-color: #044046;
+  margin: 0.3em;
   text-align: center;
+}
+.texto h1:nth-child(2) {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+.contenedorAudio {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.audio {
+  width: 50vh;
+  padding: 10px;
+  margin-bottom: 2em;
+  align-items: center;
+  justify-content: center;
+  background-color: #044046;
+  border-radius: 10px;
+}
+.audio:hover {
+  box-shadow: 2px 2px 15px 5px rgba(244, 244, 244, 0.708);
+}
+.audio h1 {
+  padding-bottom: 0.4em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+footer {
+  background: url(../img/footer.jpg) center center;
+  background-size: cover;
+  height: 50vh;
+  background-color: #044046;
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 767px) {
+  /* Tamaño para movil */
+  footer {
+    height: 20vh;
+  }
+}
+footer p {
+  text-align: center;
+  padding: 30px;
+}
+footer a{
+  text-decoration: none;
+  color: #ffffff;
+}
+footer a:hover{
+  color: #F3542D;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2em;
+  min-height: 100vh; /* debe realizarse como minimo para que el footer no sea pisado */
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  margin: 3px;
+  width: 400px;
+  height: 850px;
+  border-width: 1px;
+  border-color: grey;
+  border-radius: 5px;
+  display: flex;
+}
+.card img {
+  height: 25em;
+  width: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.contenido {
+  margin: 2%;
+}
+.card:hover {
+  box-shadow: 1px 1px 5px 2px rgba(5, 5, 5, 0.262);
+}
+.card button{
+  border-radius: 10%;
+  width: 30%;
+  height: 40px;
+  align-self:center;
+  background-color: #044046;
+  color: #ffffff;
 }
