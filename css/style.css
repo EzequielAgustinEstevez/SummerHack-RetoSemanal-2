@@ -14,14 +14,14 @@ header h1 {
   display: contents;
 }
 nav {
-  width: 10em;
+  width: 10rem;
 }
 ul {
   margin-top: revert; /* cualidad por defecto que hay que desactivar de bootstrap*/
   display: flex; /* contenedor flex */
   list-style: none; /* sin forma de lista */
   justify-content: space-around; /* Muestra elementos con la misma separación alrededor de ellos.*/
-  padding-right: 1em;
+  padding-right: 3rem;
 }
 a img {
   width: 2em;
@@ -92,7 +92,7 @@ footer {
   justify-content: space-around;
 }
 @media only screen and (max-width: 767px) {
-  /* Tamaño para movil */
+  
   footer {
     height: 20vh;
   }
